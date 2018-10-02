@@ -7,6 +7,9 @@ task hello {
   output {
     File response = stdout()
   }
+  runtime {
+   docker: "quay.io/agduncan94/my-md5sum"
+ }
 }
 
 workflow test {
